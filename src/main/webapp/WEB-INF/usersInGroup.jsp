@@ -21,9 +21,9 @@
     </tr>
     <c:forEach items="${users}" var="user">
         <tr>
-            <td>${user.id}</td>
             <td>${user.userName}</td>
             <td>${user.email}</td>
+            <td><a href="/user?id=${user.id}">Szczegóły</a></td>
         </tr>
     </c:forEach>
 </table>

@@ -19,7 +19,7 @@ public class SolutionDao {
     private static final String
             FIND_ALL_SOLUTIONS_QUERY = "SELECT * FROM solutions";
     private static final String
-            FIND_ALL_USER_SOLUTIONS_QUERY = "SELECT * FROM solutions WHERE user_id = ?";
+            FIND_ALL_USER_SOLUTIONS_QUERY = "SELECT * FROM solutions WHERE users_id = ?";
     private static final String
             FIND_ALL_EXERCISE_SOLUTIONS_QUERY = "SELECT s.* FROM solutions AS s LEFT JOIN exercises e on s.exercises_id = e.id\n" +
             "WHERE exercises_id = ? ORDER BY created DESC ;";
