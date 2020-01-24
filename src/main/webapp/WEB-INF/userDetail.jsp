@@ -33,14 +33,14 @@
         <th>Data edycji</th>
     </tr>
 
-    <c:forEach items="${solutions}" var="solution">
+    <c:forEach items="${solutions}" var="group">
     <tr>
-        <td>${solution.id}</td>
-        <td>${solution.exerciseId}</td>
-        <td>${solution.description}</td>
-        <td>${solution.created}</td>
-        <td>${solution.updated}</td>
-        <td><a href="/solution?id=${solution.id}">Szczegóły</a></td>
+        <td>${group.id}</td>
+        <td>${group.exerciseId}</td>
+        <td>${group.description}</td>
+        <td>${group.created}</td>
+        <td>${group.updated}</td>
+        <td><a href="/solution?id=${group.id}">Szczegóły</a></td>
     </tr>
 </c:forEach>
 </table>
