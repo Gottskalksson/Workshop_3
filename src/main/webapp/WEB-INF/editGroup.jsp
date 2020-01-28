@@ -10,5 +10,7 @@
         Wpisz nową nazwę grupy: <input type="text" name="name" value="<c:out value="${group.name}"/>">
         <button type="submit" name="id" value="${group.id}">Edytuj</button>
     </form>
+<a href="/groupsList">Cofnij</a>
+
 </body>
 </html>

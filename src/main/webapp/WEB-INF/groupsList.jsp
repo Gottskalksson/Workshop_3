@@ -15,6 +15,7 @@
 <table>
     <tr>
         <th>Nazwa grupy</th>
+        <th><a href="/addGroup">Dodaj nową grupę</a> </th>
     </tr>
     <c:forEach items="${groups}" var="group">
         <tr>

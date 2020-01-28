@@ -17,7 +17,7 @@ public class AddGroupServlet extends HttpServlet {
         GroupDao groupDao = new GroupDao();
         Group group = new Group(name);
         groupDao.create(group);
-
+        response.sendRedirect("/groupsList");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

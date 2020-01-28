@@ -19,6 +19,7 @@ public class EditGroupServlet extends HttpServlet {
         Group group = new Group(name);
         group.setId(Integer.parseInt(id));
         groupDao.update(group);
+        response.sendRedirect("/groupsList");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

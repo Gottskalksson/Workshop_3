@@ -10,6 +10,7 @@
     Wpisz nazwę dla nowej grupy: <input type="text" name="name">
     <button type="submit">Dodaj</button>
 </form>
+<a href="/groupsList">Cofnij</a>
 
 </body>
 </html>
