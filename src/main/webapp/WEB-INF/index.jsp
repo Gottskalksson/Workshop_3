@@ -20,12 +20,12 @@
         <th>Data dodania</th>
         <th>Akcje</th>
     </tr>
-    <c:forEach items="${solutions}" var="group">
+    <c:forEach items="${solutions}" var="user">
         <tr>
-            <td>${group.description}</td>
-            <td>${group.userId}</td>
-            <td>${group.created}</td>
-            <td><a href="/solution?id=${group.id}">Szczegóły</a></td>
+            <td>${user.description}</td>
+            <td>${user.userId}</td>
+            <td>${user.created}</td>
+            <td><a href="/solution?id=${user.id}">Szczegóły</a></td>
         </tr>
     </c:forEach>
 </table>

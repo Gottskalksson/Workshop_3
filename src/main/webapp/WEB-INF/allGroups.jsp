@@ -17,10 +17,10 @@
         <th>Grupa</th>
         <th>Akcje</th>
     </tr>
-    <c:forEach items="${groups}" var="group">
+    <c:forEach items="${groups}" var="user">
         <tr>
-            <td>${group.name}</td>
-            <td><a href="/group?id=${group.id}">Szczegóły</a></td>
+            <td>${user.name}</td>
+            <td><a href="/group?id=${user.id}">Szczegóły</a></td>
         </tr>
     </c:forEach>
 </table>
