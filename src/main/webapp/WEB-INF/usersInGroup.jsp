@@ -19,11 +19,11 @@
         <th>Użytkownik</th>
         <th>E-Mail</th>
     </tr>
-    <c:forEach items="${users}" var="user">
+    <c:forEach items="${users}" var="exercise">
         <tr>
-            <td>${user.userName}</td>
-            <td>${user.email}</td>
-            <td><a href="/user?id=${user.id}">Szczegóły</a></td>
+            <td>${exercise.userName}</td>
+            <td>${exercise.email}</td>
+            <td><a href="/user?id=${exercise.id}">Szczegóły</a></td>
         </tr>
     </c:forEach>
 </table>

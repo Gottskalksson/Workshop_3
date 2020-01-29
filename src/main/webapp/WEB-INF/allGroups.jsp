@@ -17,12 +17,13 @@
         <th>Grupa</th>
         <th>Akcje</th>
     </tr>
-    <c:forEach items="${groups}" var="user">
+    <c:forEach items="${groups}" var="exercise">
         <tr>
-            <td>${user.name}</td>
-            <td><a href="/group?id=${user.id}">Szczegóły</a></td>
+            <td>${exercise.name}</td>
+            <td><a href="/group?id=${exercise.id}">Szczegóły</a></td>
         </tr>
     </c:forEach>
 </table>
+<a href="/">Strona Główna</a>
 </body>
 </html>

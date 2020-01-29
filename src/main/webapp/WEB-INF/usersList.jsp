@@ -12,14 +12,15 @@
         <th>Nr grupy</th>
         <th><a href="/addUser">Dodaj nowego użytkownika</a> </th>
     </tr>
-    <c:forEach items="${users}" var="user">
+    <c:forEach items="${users}" var="exercise">
         <tr>
-            <td>${user.userName}</td>
-            <td>${user.email}</td>
-            <td>${user.userGroupId}</td>
-            <td><a href="/editUser?id=${user.id}">Edytuj</a></td>
+            <td>${exercise.userName}</td>
+            <td>${exercise.email}</td>
+            <td>${exercise.userGroupId}</td>
+            <td><a href="/editUser?id=${exercise.id}">Edytuj</a></td>
         </tr>
     </c:forEach>
 </table>
+<a href="/">Strona Główna</a>
 </body>
 </html>

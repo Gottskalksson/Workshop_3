@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: adam
-  Date: 18.01.2020
-  Time: 12:44
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
@@ -20,12 +13,12 @@
         <th>Data dodania</th>
         <th>Akcje</th>
     </tr>
-    <c:forEach items="${solutions}" var="user">
+    <c:forEach items="${solutions}" var="exercise">
         <tr>
-            <td>${user.description}</td>
-            <td>${user.userId}</td>
-            <td>${user.created}</td>
-            <td><a href="/solution?id=${user.id}">Szczegóły</a></td>
+            <td>${exercise.description}</td>
+            <td>${exercise.userId}</td>
+            <td>${exercise.created}</td>
+            <td><a href="/solution?id=${exercise.id}">Szczegóły</a></td>
         </tr>
     </c:forEach>
 </table>

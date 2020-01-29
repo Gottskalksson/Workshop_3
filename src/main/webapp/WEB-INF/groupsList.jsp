@@ -10,12 +10,13 @@
         <th>Nazwa grupy</th>
         <th><a href="/addGroup">Dodaj nową grupę</a> </th>
     </tr>
-    <c:forEach items="${groups}" var="user">
+    <c:forEach items="${groups}" var="exercise">
         <tr>
-            <td>${user.name}</td>
-            <td><a href="/editGroup?id=${user.id}">Edytuj</a></td>
+            <td>${exercise.name}</td>
+            <td><a href="/editGroup?id=${exercise.id}">Edytuj</a></td>
         </tr>
     </c:forEach>
 </table>
+<a href="/">Strona Główna</a>
 </body>
 </html>
